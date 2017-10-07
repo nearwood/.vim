@@ -1,7 +1,10 @@
 
+execute pathogen#infect()
+
 syntax on
 set number
 set cursorline
+set scrolloff=8
 
 colorscheme codedark
 
