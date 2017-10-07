@@ -5,9 +5,6 @@ set cursorline
 
 colorscheme codedark
 
-" Load custom indent overrides
-filetype indent on
-
 set wildmenu  " fancy cmd completion menu
 set showmatch " hightlight matching parans, etc.
 
@@ -30,7 +27,12 @@ set foldlevelstart=10
 " Tabs
 set tabstop=2
 set softtabstop=2
+set shiftwidth=2
 set expandtab
+
+" Load custom indent overrides
+filetype plugin indent on
+
 
 " highlight tabs and trailing spaces
 set encoding=utf-8
@@ -39,5 +41,5 @@ set encoding=utf-8
 
 set autoindent
 set cindent
-set smartindent
-" inoremap { {<CR>}<up><end><CR>
+"set smartindent
+"inoremap { {<CR>}<up><end><CR>
