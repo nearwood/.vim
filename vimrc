@@ -12,6 +12,9 @@ set number
 set cursorline
 set scrolloff=8
 
+" Match parens and stuff
+set showmatch
+
 " show whitespace
 set list
 set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
@@ -61,3 +64,9 @@ set autoindent
 set cindent
 "set smartindent
 "inoremap { {<CR>}<up><end><CR>
+
+"Swap paste with cursor at beginning with paste with cursor at end
+noremap p gp
+noremap p gp
+noremap gP P
+noremap gP P
